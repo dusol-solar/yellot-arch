@@ -42,7 +42,7 @@ src/
 
 ## 🔋 Stack
 
-- **Expo SDK 51^**
+- **Expo SDK 51 or higher**
 - **Tailwind css**
 - **Zustand** for global state
 - **TypeScript** first
@@ -61,7 +61,7 @@ src/
 
 ## 🚀 How to Use
 
-### Option 1: Use as Template (recommended for new projects)
+### Use as Template
 ```bash
 npx create-expo-app MyApp --template blank
 cd MyApp
