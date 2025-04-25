@@ -17,7 +17,7 @@ src/
 │
 ├── app/                    # App routing and entry screens (Expo Router)
 │
-├── features/               # Feature-based **modules**
+├── features/               # Feature-based *modules*
 │   └── home/
 │       ├── services/       # Logic, effects and services related to this module
 │       ├── view/           # UI components (e.g. cards, modals)
@@ -27,9 +27,9 @@ src/
 ├── store/                  # Zustand store(s)
 │
 ├── gateways/               # Integrations with APIs and libraries (e.g. analytics, firebase)
-│   |── firebase/               
+│   ├── firebase/               
 │   └── backend/
-│       |── index.tsx       # General configurations of the integration (urls, pemissions, request/response structure, etc.)
+│       ├── index.tsx       # General configurations of the integration (urls, pemissions, request/response structure, etc.)
 │       └── modules/   
 │           ├── types.ts    # Types specific to the backend module
 │           └── api.tsx     # API entry for this backend module
