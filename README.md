@@ -1,4 +1,6 @@
 
+🔨 This project is currently under construction.
+
 # 🟡 Yellot-arch
 
 A pragmatic front-end architecture built for React Native + Expo projects.
@@ -15,18 +17,22 @@ src/
 │
 ├── app/                    # App routing and entry screens (Expo Router)
 │
-├── features/               # Feature-based modules
+├── features/               # Feature-based **modules**
 │   └── home/
-│       ├── controller/     # Logic, effects, local state, services
+│       ├── services/       # Logic, effects and services related to this module
 │       ├── view/           # UI components (e.g. cards, modals)
 │       ├── types.ts        # Types specific to the feature
 │       └── index.tsx       # Screen-level composition for this feature
 │
 ├── store/                  # Zustand store(s)
 │
-├── libs/                   # External libraries or integrations (e.g. analytics, firebase)
-│
-├── services/               # API settings
+├── gateways/               # Integrations with APIs and libraries (e.g. analytics, firebase)
+│   |── firebase/               
+│   └── backend/
+│       |── index.tsx       # General configurations of the integration (urls, pemissions, request/response structure, etc.)
+│       └── modules/   
+│           ├── types.ts    # Types specific to the backend module
+│           └── api.tsx     # API entry for this backend module
 │
 ├── shared/                 # Reusable pieces across the app
 │   ├── components/         # Reusable UI components (Button, Input, etc.)
